@@ -6,34 +6,155 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
    </head>
    <body>
-     <div class="cards">
-        <div class="card">
-           <form action="/payment.html" method="post">
-              <div class="row">
-                 <div class="col">
-                    <h3>Shipping Address</h3>
-                 </div>
-              </div>
-              <div class="row">
-                 <div class="col">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" />
-                 </div>
-                 <div class="col">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" />
-                 </div>
-              </div>
-              <div class="row">
-                 <div class="col">
-                    <label for="address">Your Address</label>
-                    <input type="text" id="address" />
-                 </div>
-              </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</body>
+      <div class="cards">
+         <div class="card">
+            <form action="/payment.html" method="post">
+               <div class="row">
+                  <div class="col">
+                     <h3>Shipping Address</h3>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <label for="firstName">First Name</label>
+                     <input type="text" id="firstName" />
+                  </div>
+                  <div class="col">
+                     <label for="lastName">Last Name</label>
+                     <input type="text" id="lastName" />
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <label for="address">Your Address</label>
+                     <input type="text" id="address" />
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <label for="zip">Zip Code</label>
+                     <input type="text" pattern="[0-9]{5}" title="Five digit zip code" />
+                  </div>
+                  <div class="col">
+                     <label for="country">State</label>
+                     <input type="text" id="state" />
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <label for="address">Phone Number</label>
+                     <input id="phone-input" type="tel" value="" name="PhoneIn" aria-label="Please enter your phone number">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col">
+                     <label for="checkbox">
+                     <input type="checkbox" id="checkbox" /> Are shipping and billing address the same?
+                     </label>
+                  </div>
+               </div>
+               <!-- begin .hide -->
+               <div class="row billing">
+                  <div class="col">
+                     <h3>Billing Address</h3>
+                  </div>
+               </div>
+               <div class="row billing">
+                  <div class="col">
+                     <label for="firstName2">First Name</label>
+                     <input type="text" id="firstName2" />
+                  </div>
+                  <div class="col billing">
+                     <label for="lastName2">Last Name</label>
+                     <input type="text" id="lastName2" />
+                  </div>
+               </div>
+               <div class="row billing">
+                  <div class="col">
+                     <label for="address2">Your Billing Address</label>
+                     <input type="text" id="address2" />
+                  </div>
+               </div>
+               <div class="row billing">
+                  <div class="col">
+                     <label for="zip">Zip Code</label>
+                     <input type="text" pattern="[0-9]{5}" title="Five digit zip code" />
+                  </div>
+                  <div class="col billing">
+                     <label for="country2">State</label>
+                     <input type="text" id="state2" />
+                  </div>
+               </div>
+               <div class="row billing">
+                  <div class="col">
+                     <label for="address">Phone Number</label>
+                     <input id="phone-input" type="tel" value="" name="PhoneIn" aria-label="Please enter your phone number">
+                  </div>
+               </div>
+               <div class="col">
+                  <input type="submit" value="Proceed To Payment" formaction="payment.html">
+               </div>
+         </div>
+         <!-- end .hide -->
+         </form>
+         <div class="card">
+            <div class="order_summary">
+               <h3>
+               Order Summary</h4>
+               <div class="summary_card">
+                  <div class="card_item">
+                     <div class="product_img">
+                        <img src="https://images.pexels.com/photos/8888234/pexels-photo-8888234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                     </div>
+                     <div class="product_info">
+                        <h5>Leather Boots</h5>
+                        <p>High heel leather boots.</p>
+                        <div class="close-btn">
+                           <i class="fa fa-close"></i>
+                        </div>
+                        <div class="product_rate_info">
+                           <h5>$ 140 </h5>
+                           <span class="pqt-minus">-</span>
+                           <span class="pqt">1</span>
+                           <span class="pqt-plus">+</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card_item">
+                     <div class="product_img">
+                        <img src="https://images.pexels.com/photos/3908800/pexels-photo-3908800.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+                     </div>
+                     <div class="product_info">
+                        <h5>ZARA Purse</h5>
+                        <p>Nude Bag S/S season.</p>
+                        <div class="close-btn">
+                           <i class="fa fa-close"></i>
+                        </div>
+                        <div class="product_rate_info">
+                           <h5>$ 110 </h5>
+                           <span class="pqt-minus">-</span>
+                           <span class="pqt">1</span>
+                           <span class="pqt-plus">+</span>
+                        </div>
+                     </div>
+                  </div>
+                  <hr />
+                  <div class="order_price">
+                     <p>Order summary </p>
+                     <h5>$250</h5>
+                  </div>
+                  <div class="order_service">
+                     <p>Additional Tax</p>
+                     <h5>$5</h5>
+                  </div>
+                  <div class="order_total">
+                     <p>Total Amount</p>
+                     <h4>$255</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="func.js"></script>
+   </body>
 </html>
