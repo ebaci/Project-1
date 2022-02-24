@@ -2,3 +2,6 @@
 id_rsa
 id_rsa*
 id_rsa.pub
+backstop_data/bitmaps_test/
+backstop_data/html_report/
+backstop_data/engine_scripts/
